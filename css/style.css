@@ -1,0 +1,91 @@
+body {
+ background-color: aquamarine;
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0px;
+ padding: 0px;
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 0px 30px;
+ min-height: calc(100vh - 200px);
+}
+
+.game-board {
+  background-color: #E6E6E6;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.player-round-info {
+  font-size: 3em;
+  margin: 0px;
+}
+
+.keypad {
+  background-color: darkviolet;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.keypad__button {
+  background-color: rgb(139, 71, 46);
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+}
+
+.keypad__button--green {
+  background-color: darkgreen;
+}
+
+.keypad__button--red {
+  background-color: darkred;
+}
+
+.keypad__button--yellow {
+  background-color: darkorange;
+}
+
+.keypad__button--blue {
+  background-color: darkblue;
+}
+
+.start-btn {
+  width: 250px;
+  height: 80px;
+  background: #4d4d4d;
+  color: #e6e6e6;
+  font-size: 1.5rem;
+  position: absolute;
+  top: calc(39%);
+  left: calc(14%);  
+}
+
+.level-info {
+  margin: 0px;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-board {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
