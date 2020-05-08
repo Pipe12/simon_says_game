@@ -1,5 +1,5 @@
 body {
- background-color: aquamarine;
+ background-color: #333;
  font-family: Arial, Helvetica, sans-serif;
  margin: 0px;
  padding: 0px;
@@ -14,8 +14,8 @@ body {
 }
 
 .game-board {
-  background-color: #E6E6E6;
-  border: 2px solid white;
+  background-color: rgba(230, 230, 230, 0.1);
+  border: 2px solid #E6E6E6;
   border-radius: 40px;
   padding: 60px 68px 40px;
   min-height: 700px;
@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: #E6E6E6
 
 }
 
@@ -69,12 +70,18 @@ body {
 .start-btn {
   width: 250px;
   height: 80px;
-  background: #4d4d4d;
+  border: none;
+  border-radius: 5px; 
+  background: rgba(77, 77, 77, 0.9);
   color: #e6e6e6;
   font-size: 1.5rem;
   position: absolute;
   top: calc(39%);
   left: calc(14%);  
+}
+
+.start-btn:hover {
+  background-color: rgba(77, 77, 77, 1);
 }
 
 .level-info {
