@@ -89,6 +89,10 @@ body {
   font-size: 2em;
 }
 
+.hide {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .game-board {
     background-color: transparent;
@@ -96,3 +100,8 @@ body {
     padding: 0px;
     width: 100%;
   }
+  
+  body {
+    background-color: rgba(77, 77, 77, 1);
+  }
+}
